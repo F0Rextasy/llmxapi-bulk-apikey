@@ -1,0 +1,34 @@
+{
+  "name": "llmxapi-bulk-apikey",
+  "version": "1.0.0",
+  "description": "Bulk-create 一码科技 (hk.llmxapi.com) accounts with API keys — OpenAI-compatible inference + 9Router connector.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "llmxapi-bulk-apikey": "src/cli.js",
+    "llmxapi-bulk-apikey-launcher": "src/launcher.js"
+  },
+  "main": "src/cli.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/launcher.js",
+    "mint": "node src/cli.js --auto",
+    "9router": "node src/connect-9router.js",
+    "omniroute": "node src/connect-omniroute.js"
+  },
+  "keywords": [
+    "api-key",
+    "bulk",
+    "register",
+    "launcher",
+    "llmxapi",
+    "apikey"
+  ],
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
